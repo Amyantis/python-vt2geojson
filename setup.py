@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 from vt2geojson import NAME, DESCRIPTION, AUTHOR, AUTHOR_EMAIL, URL, __version__
 
@@ -14,6 +14,7 @@ setup(
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
     url=URL,
+    packages=find_packages(),
     entry_points={
         "console_scripts": ['vt2geojson=vt2geojson.cli:main']
     },

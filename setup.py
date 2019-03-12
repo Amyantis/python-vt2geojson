@@ -14,5 +14,6 @@ setup(
     },
     install_requires=[
         "mapbox_vector_tile"
-    ]
+    ],
+    test_suite="tests"
 )

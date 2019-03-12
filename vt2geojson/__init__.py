@@ -1,4 +1,4 @@
-VERSION = (0, 1, 2)
+VERSION = (0, 1, 3)
 NAME = "vt2geojson"
 DESCRIPTION = "Dump vector tiles to GeoJSON from remote URLs or local system files."
 AUTHOR = "Theophile Dancoisne"

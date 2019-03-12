@@ -1,0 +1,13 @@
+VERSION = (0, 1, 0)
+NAME = "python-vt2geojson"
+DESCRIPTION = "Dump vector tiles to GeoJSON from remote URLs or local system files."
+AUTHOR = "Theophile Dancoisne"
+AUTHOR_EMAIL = "dancoisne.theophile@gmail.com"
+URL = ""
+
+
+def get_version():
+    return '.'.join(map(str, VERSION))
+
+
+__version__ = get_version()

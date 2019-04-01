@@ -29,5 +29,5 @@ def vt_bytes_to_geojson(b_content: bytes, x: int, y: int, z: int, layer=None) ->
                             for name, layer_obj in data.items() if layer is None or name == layer]
     return {
         "type": "FeatureCollection",
-        "features": [fc["features"] for fc in features_collections]
+        "features": [f for fc in features_collections for f in fc["features"]]
     }

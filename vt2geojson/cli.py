@@ -1,5 +1,5 @@
 import argparse
-from pprint import pprint
+import json
 from re import search
 from urllib.request import urlopen
 
@@ -35,7 +35,7 @@ def main():
             content = f.read()
 
     geojson_result = vt_bytes_to_geojson(content, x, y, z, args.layer)
-    pprint(geojson_result)
+    print(json.dumps(geojson_result))
 
 
 if __name__ == "__main__":

@@ -5,7 +5,7 @@ Inspired from https://github.com/mapbox/vt2geojson.
 
 ## Installation
 ```
-pip install python-vt2geojson
+pip install vt2geojson
 ```
 
 ## Usage

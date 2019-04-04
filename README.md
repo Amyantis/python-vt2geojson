@@ -36,6 +36,9 @@ features = vt_bytes_to_geojson(vt_content, x, y, z)
 gdf = gpd.GeoDataFrame.from_features(features)
 ```
 
+## Todos:
+* Add more test using `vector-tile/test/fixtures/*.vector.pbf` data files.
+
 ## Notes
 This library has only been tested against **Python 3.6**.
 

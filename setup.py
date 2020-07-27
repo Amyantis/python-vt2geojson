@@ -1,14 +1,13 @@
 from setuptools import setup, find_packages
 
-from vt2geojson import NAME, DESCRIPTION, AUTHOR, AUTHOR_EMAIL, URL
+from vt2geojson import NAME, DESCRIPTION, AUTHOR, AUTHOR_EMAIL, URL, __version__
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
     name=NAME,
-    use_scm_version=True,
-    setup_requires=['setuptools_scm'],
+    version=__version__,
     description=DESCRIPTION,
     long_description=long_description,
     long_description_content_type="text/markdown",

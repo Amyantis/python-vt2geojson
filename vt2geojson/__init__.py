@@ -4,4 +4,4 @@ AUTHOR = "Theophile Dancoisne"
 AUTHOR_EMAIL = "dancoisne.theophile@gmail.com"
 URL = "https://github.com/Amyantis/python-vt2geojson"
 
-__version__ = "0.1.7"
+__version__ = "0.2.0"

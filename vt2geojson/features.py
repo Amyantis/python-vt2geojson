@@ -9,6 +9,7 @@ class GeometryType(Enum):
     POLYGON = 'Polygon'
     MULTILINESTRING = 'MultiLineString'
     MULTIPOLYGON = 'MultiPolygon'
+    MULTIPOINT = 'MultiPoint'
 
 
 class Feature:

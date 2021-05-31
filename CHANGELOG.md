@@ -1,6 +1,8 @@
 
 **unreleased**
 
+**v0.2.1**
+
 - Add `MultiPoint` support.
 - Fix Mapbox uri example.
 - Add a license file.

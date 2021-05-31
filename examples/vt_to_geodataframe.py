@@ -9,7 +9,7 @@ x = 150
 y = 194
 z = 9
 
-url = f"https://api.mapbox.com/v4/mapbox.mapbox-streets-v6/{z}/{x}/{z}.vector.pbf?access_token={MAPBOX_ACCESS_TOKEN}"
+url = f"https://api.mapbox.com/v4/mapbox.mapbox-streets-v6/{z}/{x}/{y}.vector.pbf?access_token={MAPBOX_ACCESS_TOKEN}"
 r = requests.get(url)
 assert r.status_code == 200, r.content
 vt_content = r.content

@@ -24,7 +24,10 @@ def vt_bytes_to_geojson(b_content: bytes, x: int, y: int, z: int, layer=None) ->
     :param layer: include only the specified layer.
     :return: a features collection (GeoJSON).
     """
-    data = decode(b_content, y_coord_down=True)
+    try:
+        data = decode(b_content, default_options={"y_coord_down": True})
+    except TypeError:
+        data = decode(b_content, y_coord_down=True)
     features_collections = [Layer(x=x, y=y, z=z, name=name, obj=layer_obj).toGeoJSON()
                             for name, layer_obj in data.items() if layer is None or name == layer]
     return {
